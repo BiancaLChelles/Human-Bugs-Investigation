@@ -9,7 +9,7 @@
 const investigarBugHumano = (sintomaDetectado) => {
 
     // O 'switch' funciona como uma central de triagem. 
-    // recebe o que você está sentindo e procura na lista qual é o protocolo de resolução adequado para aquele caso específico.
+    // ele vai receber o que você está sentindo e procurar na lista qual é o protocolo de resolução adequado para aquele caso específico.
   
     switch (sintomaDetectado) {
 
