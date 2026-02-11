@@ -65,7 +65,7 @@ function tradutorDeSentimentos(sinalFisico, intensidade) {
 
 
 
-const meuSentimento = tradutorDeSentimentos("mãos agitadas", 7);
+const meuSentimento = tradutorDeSentimentos("mãos agitadas", 5);
 
  console.log ( ` 
     === ANALISANDO SINAIS CORPORAIS ===
