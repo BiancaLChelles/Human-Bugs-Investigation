@@ -1,8 +1,8 @@
 // Este código foi construído como um "Exoesqueleto Mental". 
 // serve para traduzir sensações físicas e mentais que o próprio corpo às vezes não consegue nomear sozinho (como no caso de individuos com Alexitimia).
 
-
 //==============================================================================================================================
+
 
 //  AQUI O USUÁRIO NÃO DEVE MEXER
 // Esta é a função principal. O nome 'investigarBugHumano' indica que estamos abrindo uma sessão de diagnóstico técnico sobre o nosso próprio estado.
