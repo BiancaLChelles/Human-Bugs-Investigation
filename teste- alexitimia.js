@@ -8,7 +8,6 @@
 
 
 
-
 function tradutorDeSentimentos(sinalFisico, intensidade) {
    
 
@@ -52,6 +51,7 @@ function tradutorDeSentimentos(sinalFisico, intensidade) {
                 };
             }
 
+          
         default:
             return {
                 emocao: "uma Emoção não reconhecida",
