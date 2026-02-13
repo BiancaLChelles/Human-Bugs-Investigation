@@ -1,5 +1,6 @@
 
 
+
 // Neste código busco desenvolver um "sensor"
 //  que analise sensações fisicas e traduza em sentimentos
 // o intuito é auxiliar individuos com alexitima 
@@ -121,10 +122,11 @@ function tradutorDeSentimentos(sinalFisico, intensidade) {
 
         case "dificuldade em falar":
             case "formular frases":
-            if (intensidade >= 8) {
+                case "fala lenta":
+            if (intensidade >= 6) {
                 return {
                     emocao: "Esgotamento Verbal (NÃO VERBAL)",
-                    instrucao: "O sistema de linguagem está offline para pevivinir danos com a sobrecarga de energia. Use gestos, textos ou apenas descanse. Nem tudo tem que ser comunicado agora."
+                    instrucao: "O sistema de linguagem está offline para previvinir danos com a sobrecarga de energia. Use gestos, textos ou apenas descanse. Nem tudo tem que ser comunicado agora."
                 };
             } else {
                 return {
@@ -146,7 +148,7 @@ function tradutorDeSentimentos(sinalFisico, intensidade) {
 
 
 
-const meuSentimento = tradutorDeSentimentos("mãos agitadas", 7);
+const meuSentimento = tradutorDeSentimentos("fala lenta", 7);
 
  console.log ( ` 
     === ANALISANDO SINAIS CORPORAIS ===
