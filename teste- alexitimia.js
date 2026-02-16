@@ -1,6 +1,4 @@
 
-
-
 // Neste código busco desenvolver um "sensor"
 //  que analise sensações fisicas e traduza em sentimentos
 // o intuito é auxiliar individuos com alexitima 
@@ -16,6 +14,8 @@ function tradutorDeSentimentos(sinalFisico, intensidade) {
 
     switch (sinalFisico) {
         case "nó na garganta":
+            case "vontade de chorar":
+                case "choro preso":
             if (intensidade >= 7) {
                 return {
                     emocao: "Tristeza Profunda ou Vontade de chorar",
@@ -29,6 +29,8 @@ function tradutorDeSentimentos(sinalFisico, intensidade) {
             }
 
         case "peito apertado":
+            case "aperto no peito":
+                case "coração apertado":
              if (intensidade >= 7) {
                 return {
                     emocao: "Desespero / Pãnico",
@@ -42,6 +44,8 @@ function tradutorDeSentimentos(sinalFisico, intensidade) {
         }
 
         case "mãos agitadas":
+            case "flappin hands":
+                case "mãos tremendo":
             if (intensidade >= 5) {
                 return {
                     emocao: "Agitação Sensorial ou Estresse",
@@ -56,6 +60,10 @@ function tradutorDeSentimentos(sinalFisico, intensidade) {
 
             case "olhar fixo":
                 case  "olhar desligando":
+                    case "olhar travado":
+                        case "olhar morto":
+                            case "olhar pesado":
+                                case "olhar pesando":
             if (intensidade >= 6) {
                 return {
                     emocao: "Dissociação ou Shutdown iminente",
@@ -69,6 +77,8 @@ function tradutorDeSentimentos(sinalFisico, intensidade) {
             }
 
             case "respiração rápida":
+                case "respiração acelerada":
+                    case "respiração forte":
             if (intensidade >= 7) {
                 return {
                     emocao: "Sobrecarga Sensorial ou Crise de Ansiedade",
@@ -82,6 +92,8 @@ function tradutorDeSentimentos(sinalFisico, intensidade) {
             }
 
         case "sensibilidade ao som":
+            case "sons muito altos":
+                case " sons incomodando":
             if (intensidade >= 6) {
                 return {
                     emocao: "Irritabilidade ou Pré-Meltdown",
@@ -95,6 +107,7 @@ function tradutorDeSentimentos(sinalFisico, intensidade) {
             }
 
         case "pernas agitadas":
+            case "pernas tremendo":
             if (intensidade >= 5) {
                 return {
                     emocao: "Necessidade de autorregulação (Stimming)",
@@ -108,6 +121,7 @@ function tradutorDeSentimentos(sinalFisico, intensidade) {
             }
 
         case "mãos geladas":
+            case "mãos frias":
             if (intensidade >= 6) {
                 return {
                     emocao: "Medo ou Ansiedade Social",
@@ -121,8 +135,10 @@ function tradutorDeSentimentos(sinalFisico, intensidade) {
             }
 
         case "dificuldade em falar":
-            case "formular frases":
+            case "dificuldade em formular frases":
                 case "fala lenta":
+                    case "fala travada":
+                        case "dissociação":
             if (intensidade >= 6) {
                 return {
                     emocao: "Esgotamento Verbal (NÃO VERBAL)",
@@ -135,6 +151,40 @@ function tradutorDeSentimentos(sinalFisico, intensidade) {
                 };
             }
 
+            case "pensamento acelerado":
+        case "mente com vários cenários ao mesmo tempo":
+            case "mente acelerada":
+                case "pensamentos caóticos":
+                    case "pensamentos acelerados":
+                        case "mente um caos":
+            if (intensidade >= 8) {
+                return {
+                    emocao: "Crise Ansiosa ou Loop de TAG",
+                    instrucao: "O processador está superaquecendo com simulações do futuro. Volte ao momento presente."
+                };
+            } else {
+                return {
+                    emocao: "Ansiedade Antecipatória",
+                    instrucao: "Muitas abas estão abertas mentalmente. Tente minimizar o funcionamento para que o sistema possa se regular."
+                };
+            }
+
+        case "pensamento em looping":
+        case "ruminando o passado":
+            case "ruminação":
+                case "mente presa":
+                    case "mente em looping":
+            if (intensidade >= 7) {
+                return {
+                    emocao: "Ruminação (Bug de Autocrítica)",
+                    instrucao: "O sistema travou em um erro do passado. Lembre-se: código executado, não pode ser editado. Reprograme, recomece."
+                };
+            } else {
+                return {
+                    emocao: "Análise de Padrões Sociais",
+                    instrucao: "Você está tentando entender uma interação. Dê um tempo limite para isso, analise, processe e depois faça uma tarefa manual para sair deste foco."
+                };
+            }
         default:
             return {
                 emocao: "uma Emoção não reconhecida",
@@ -148,7 +198,7 @@ function tradutorDeSentimentos(sinalFisico, intensidade) {
 
 
 
-const meuSentimento = tradutorDeSentimentos("fala lenta", 7);
+const meuSentimento = tradutorDeSentimentos("aperto no peito", 7);
 
  console.log ( ` 
     === ANALISANDO SINAIS CORPORAIS ===
